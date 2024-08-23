@@ -2,8 +2,7 @@ create database Mercado;
 USE Mercado;
 
 CREATE TABLE Categorias(
-	id_categoria INT auto_increment PRIMARY KEY,
-    nome_categoria varchar(100) NOT NULL
+    nome_categoria varchar(100) PRIMARY KEY NOT NULL
 );
 
 create table Produtos(
@@ -11,8 +10,8 @@ create table Produtos(
 	nome_produto varchar(100) NOT NULL,
     preco decimal(10,2) NOT NULL,
     quantidade_estoque int NOT NULL,
-    id_categoria INT,
+    nome_categoria varchar(100) NOT NULL,
     fornecedor varchar(100) NOT NULL,
-    foreign key(id_categoria) references Categorias (id_categoria)
+    foreign key(nome_categoria) references Categorias (nome_categoria)
 );
 
