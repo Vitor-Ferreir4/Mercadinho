@@ -1,0 +1,11 @@
+create database Mercado;
+USE Mercado;
+
+create table Produtos(
+	IdProduto INT AUTO_INCREMENT PRIMARY KEY,
+	NomeProduto varchar(100) NOT NULL,
+    Preco decimal(10,2) NOT NULL,
+    QuantidadeEstoque int NOT NULL,
+    NomeCategoria varchar(100) NOT NULL,
+    Fornecedor varchar(100) NOT NULL
+);
