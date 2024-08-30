@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\020.758475\\Documents\\Varejo\\Varejo.csproj": {}
+    "c:\\Users\\021.898687\\Mercadinho\\Varejo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\020.758475\\Documents\\Varejo\\Varejo.csproj": {
+    "c:\\Users\\021.898687\\Mercadinho\\Varejo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\020.758475\\Documents\\Varejo\\Varejo.csproj",
+        "projectUniqueName": "c:\\Users\\021.898687\\Mercadinho\\Varejo.csproj",
         "projectName": "Varejo",
-        "projectPath": "C:\\Users\\020.758475\\Documents\\Varejo\\Varejo.csproj",
-        "packagesPath": "C:\\Users\\020.758475\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\020.758475\\Documents\\Varejo\\obj\\",
+        "projectPath": "c:\\Users\\021.898687\\Mercadinho\\Varejo.csproj",
+        "packagesPath": "C:\\Users\\021.898687\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\021.898687\\Mercadinho\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\020.758475\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\021.898687\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

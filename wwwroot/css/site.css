@@ -1,3 +1,45 @@
+/* Estilo para a navbar com fundo escuro */
+.navbar {
+  background-color: #391877; /* Verde escuro para a navbar */
+  color: #F2F2F2; /* Cor clara para o texto na navbar */
+}
+
+/* Altere a cor do texto dos links da navbar */
+.navbar-nav .nav-link {
+  color: #F2F2F2 !important; /* Cor clara para os links na navbar */
+}
+
+/* Altere a cor do texto dos links quando passam o mouse sobre */
+.navbar-nav .nav-link:hover {
+  color: #8C1F28 !important; /* Vermelho escuro para o hover */
+}
+
+/* Estilo para o botão do toggler da navbar */
+.navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+}
+
+/* Estilo para os botões e focos */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem #8C1F28, 0 0 0 0.25rem #044040; /* Utilizando o vermelho escuro e o verde escuro para focos */
+}
+
+/* Estilo para o footer */
+.footer {
+  background-color: #391877; /* Vermelho escuro para o fundo do footer */
+  color: #F2F2F2; /* Cor clara para o texto do footer */
+  border-top: 1px solid #044040; /* Linha superior em verde escuro */
+}
+
+.footer a {
+  color: #D92525; /* Vermelho brilhante para os links no footer */
+}
+
+.footer a:hover {
+  color: #140440; /* Verde escuro para o hover nos links do footer */
+}
+
+/* Ajustes de tamanho da fonte */
 html {
   font-size: 14px;
 }
@@ -8,15 +50,7 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 html {
   position: relative;
   min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
 }
