@@ -19,7 +19,6 @@ namespace Varejo.Pages.Produtos
         [BindProperty]
         public Produto Produto { get; set; }
 
-        // Método GET para exibir o formulário de edição
         public async Task<IActionResult> OnGetAsync(int id)
         {
             Produto = await _context.Produtos.FindAsync(id);
@@ -32,7 +31,6 @@ namespace Varejo.Pages.Produtos
             return Page();
         }
 
-        // Método POST para salvar as alterações
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -40,7 +38,6 @@ namespace Varejo.Pages.Produtos
                 return Page();
             }
 
-            // Buscar o produto existente
             var produtoFromDb = await _context.Produtos.FindAsync(Produto.IdProduto);
 
             if (produtoFromDb == null)
@@ -48,7 +45,6 @@ namespace Varejo.Pages.Produtos
                 return NotFound();
             }
 
-            // Atualizar as propriedades
             produtoFromDb.NomeProduto = Produto.NomeProduto;
             produtoFromDb.Preco = Produto.Preco;
             produtoFromDb.QuantidadeEstoque = Produto.QuantidadeEstoque;
@@ -57,7 +53,6 @@ namespace Varejo.Pages.Produtos
 
             try
             {
-                // Salvar alterações no banco de dados
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -72,7 +67,6 @@ namespace Varejo.Pages.Produtos
                 }
             }
 
-            // Redirecionar para a página de índice (ou qualquer outra página que desejar)
             return RedirectToPage("../Index");
         }
 

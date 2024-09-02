@@ -13,10 +13,9 @@ namespace Varejo.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configuração de Produto
             modelBuilder.Entity<Produto>(entity =>
             {
-                entity.HasKey(e => e.IdProduto); // Configura a chave primária
+                entity.HasKey(e => e.IdProduto);
 
                 entity.Property(e => e.NomeProduto)
                       .HasMaxLength(100)

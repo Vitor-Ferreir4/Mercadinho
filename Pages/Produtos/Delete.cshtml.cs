@@ -36,7 +36,6 @@ namespace Varejo.Pages.Produtos
                 return NotFound();
             }
 
-            // Verifica se o produto realmente existe antes de tentar removê-lo
             var produtoToDelete = await _context.Produtos.FindAsync(Produto.IdProduto);
 
             if (produtoToDelete == null)

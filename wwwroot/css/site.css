@@ -1,29 +1,24 @@
 .navbar {
   background-image: linear-gradient(45deg, #050507, #21072e);
-  color: #f1f1f1; /* Cor clara para o texto na navbar */
+  color: #f1f1f1;
 }
 
-/* Altere a cor do texto dos links da navbar */
 .navbar-nav .nav-link {
-  color: #d4d4d4 !important; /* Cor clara para os links na navbar */
+  color: #d4d4d4 !important;
 }
 
-/* Altere a cor do texto dos links quando passam o mouse sobre */
 .navbar-nav .nav-link:hover {
-  color: #6f5a88 !important; /* Vermelho escuro para o hover */
+  color: #6f5a88 !important;
 }
 
-/* Estilo para o botão do toggler da navbar */
 .navbar .navbar-toggler-icon {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
 }
 
-/* Estilo para os botões e focos */
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem #8C1F28, 0 0 0 0.25rem #050507;
 }
 
-/* Estilo para o footer */
 .footer {
   background-color: #050507;
   color: #F2F2F2;
